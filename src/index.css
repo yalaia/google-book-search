@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400");
+
+body {
+  font-family: "Open Sans", serif;
+}
+
+.header h1{
+  color: #c9af98;
+  text-align: center;
+}
+
+.header p{
+  text-align: center;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.input-box {
+  padding-left: 10px;
+  width: 68%;
+  height: calc(2.25rem + 2px);
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  letter-spacing: 0.12em;
+  font-size: 0.8rem;
+  margin-right: 1em;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.btn-submit {
+  height: calc(2.25rem + 2px);
+  color: #495057;
+  background-color: #fff;
+  border: 1px solid #ced4da;
+  border-radius: 0.3rem;
+}
+
+
+.results{
+  max-width: 1024px;
+  margin: 0 auto;
+  
+}
+.results h2 {
+  text-align: center;
+  letter-spacing: 0.15em;
+}
+
+.book-card {
+  padding: 1.5rem;
+  margin-bottom: 1em;
+  background-color: #fff;
+  box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
+  color: #4a4a4a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.right p:first-of-type {
+  font-style: italic;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited,
+a:link {
+  color: black;
+}
+
+
+@media screen and (min-width: 768px){
+  .book-card{
+    flex-direction: row;
+  }
+
+  .left{
+    margin-right: 1.5em;
+  }
+
+  .right{
+    flex: 0 0 80%;
+  }
+}
